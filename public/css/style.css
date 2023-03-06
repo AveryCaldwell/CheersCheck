@@ -249,10 +249,11 @@ body {
 
 .add-inventory-container {
     border-radius: 25px;
-    /* margin-bottom: 15px; */
+    margin-bottom: 15px;
     background-color: var(--dark);
     height: 650px;
     width: 600px;
+    /* width: min-content; */
     /* left: calc(50% - 300px); */
     top: calc(50% - 325px);
     position: absolute;
@@ -492,6 +493,9 @@ body {
         margin: 0;
         padding: 5px;
         font-size: 20px;
+    }
+    .add-inventory-container {
+        height: min-content !important;
     }
 }
 

@@ -17,7 +17,7 @@
 
 #  Description 📝
 
-- A web application where alcohol enthusiasts can keep track of what's in their liquor cabinet. Users can make comments on other user's inventory as well. Using Handlebars.js as the templating language, Sequelize as the ORM, and express-session npm package for authentication.
+- A web application where alcohol enthusiasts can keep track of what's in their liquor cabinet. Using Handlebars.js as the templating language, Sequelize as the ORM, and express-session npm package for authentication, as well as, anime.js for animation and DataTables for inventory visualization.
 
 <br>
 
@@ -36,9 +36,39 @@ SO THAT I can  I can share with friends and other users who might have similar t
 
 ## User Experience 👤 
 
-<br> 
-1. Install express-handlebars package to implement Handlebars.js for your Views, use the MySQL2 and Sequelize packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers. <br>
-2. You’ll also need the dotenv package to use environment variables, the bcrypt package to hash passwords, and the express-session and connect-session-sequelize packages to add authentication.
+<br>
+
+- Clone the repository using:
+
+```terminal
+git clone https://github.com/AveryCaldwell/CheersCheck.git
+```
+-  Navigate to the folder using the terminal.
+
+-  Use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
+
+-  Install dependencies using:
+```terminal
+npm install
+```
+-  Log in to your MySQL using:
+```terminal
+mysql -u root -p
+```
+-  Create the database:
+ ```terminal
+source db/schema.sql
+```
+-  Exit MySql using the command: `quit`.
+
+- Run the following command to seed data to your database:
+ ```terminal
+ npm run seed
+```
+- Start the application:
+```terminal
+npm start
+```
 
 <br>
 
