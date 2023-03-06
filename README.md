@@ -12,7 +12,6 @@
   - [Useful resources](#useful-resources-📚)
   - [Continued development](#continued-development-🏗️) 
 - [Author](#author-✏️)
-- [Acknowledgments](#acknowledgments-👏)
 
 <br>
 
