@@ -53,7 +53,7 @@ SO THAT I can  I can share with friends and other users who might have similar t
 ###  Links 🔗
 
 - Github URL: [https://github.com/AveryCaldwell/CheersCheck](https://github.com/AveryCaldwell/CheersCheck)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://dry-gorge-23555.herokuapp.com/](https://dry-gorge-23555.herokuapp.com/)
 
 <br>
 <hr>
