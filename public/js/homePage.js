@@ -1,4 +1,5 @@
 let addCardVisibleState = false;
+
 const favoriteSwitchContainer = document.querySelector('.modal-switch');
 const liquorDescription = document.getElementById('liquorDescription');
 const closeButton = document.getElementById('add-close-button');
@@ -11,9 +12,12 @@ const inventoryContainer = document.querySelector('.inventory-container');
 const favoriteSwitch = document.querySelector('#addFavorite');
 const addPostButton = document.querySelector('#add-post-button');
 const deleteItemButton = document.querySelector('#deleteItemButton');
+
 let currentlySelectedLiquor;
 let rowSelected;
 let table;
+
+// Event listeners
 document.addEventListener('DOMContentLoaded', function () {
     closeButton.addEventListener('click', function () {
         addModal();
@@ -63,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Function to delete item
 const deleteInventoryItem = async () => {
     if (rowSelected !== undefined) {
         let target = table.row(rowSelected).data()[1];
@@ -80,7 +85,7 @@ const deleteInventoryItem = async () => {
         alert('Please select item to delete.');
     }
 };
-
+// function to populate favorited alcohol in liquor cabinet
 const populateDrawer = async () => {
     const response = await fetch(`api/inventory/true`, {
         method: 'GET',
@@ -101,7 +106,7 @@ const populateDrawer = async () => {
     }
     // for(i=0;i<)
 };
-
+// POST chosen alcohol by liquor_id and refresh page
 const addToInventory = async () => {
     const response = await fetch('api/inventory/', {
         method: 'POST',
@@ -115,6 +120,7 @@ const addToInventory = async () => {
         location.reload();
     }
 };
+// Function to show description, image, favorite toggle of selected liquor in modal
 const setLiquorData = async (id) => {
     if (id !== 0) {
         const response = await fetch(`api/liquor/${id}`, {
@@ -132,6 +138,7 @@ const setLiquorData = async (id) => {
         }
     }
 };
+// GET list of liquors, set user input as `option` to add to dataTable
 const getLiquorList = async () => {
     const response = await fetch('api/liquor/', {
         method: 'GET',
@@ -158,6 +165,7 @@ const getLiquorList = async () => {
     }
 };
 
+// Function for add new inventory modal
 const addModal = () => {
     liquorDescription.innerHTML = '';
     liquorImage.src = '';

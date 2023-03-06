@@ -1,3 +1,4 @@
+// LOGOUT FUNCTION
 const logoutFormHandler = async () => {
     if (logoutFormHandler) {
         try {
