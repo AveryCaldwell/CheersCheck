@@ -12,6 +12,7 @@
   - [Useful resources](#useful-resources-📚)
   - [Continued development](#continued-development-🏗️) 
 - [Author](#author-✏️)
+  - [Grade](#grade)
 
 <br>
 
@@ -138,3 +139,4 @@ npm start
 
 <br>
 
+### Grade - 100/100
